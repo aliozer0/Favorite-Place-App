@@ -1,4 +1,5 @@
 import 'package:favorite_place/providers/user_places.dart';
+import 'package:favorite_place/widgets/image_input.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/animation/animation_controller.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -48,8 +49,13 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
                   TextStyle(color: Theme.of(context).colorScheme.onBackground),
             ),
             const SizedBox(
+              height: 10,
+            ),
+            ImageInput(),
+            const SizedBox(
               height: 16,
             ),
+
             ElevatedButton.icon(
               onPressed: _savePlace,
               icon: const Icon(Icons.add),
