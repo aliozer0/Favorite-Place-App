@@ -22,7 +22,7 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
     if (enteredTitle.isEmpty) {
       return;
     }
-    ref.read(userPlacesProvider.notifier).addPlace(enteredTitle);
+    ref.read(userPlacesProvider.notifier).addPlace(enteredTitle,);
     Navigator.of(context).pop();
   }
 
@@ -36,7 +36,7 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Add new Place'),
+        title: const Text('Add new Places'),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(12),
