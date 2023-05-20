@@ -24,7 +24,7 @@ class _ImageInputState extends State<ImageInput> {
     setState(() {
       _selectedImage = File(pickedImage.path);
     });
-    Widget.onPickImage(_selectedImage);
+    widget.onPickImage(_selectedImage!);
   }
 
   @override
