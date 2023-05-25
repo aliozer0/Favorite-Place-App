@@ -23,7 +23,7 @@ class _LocationInputState extends State<LocationInput> {
     }
     final lat = _pickedLocation!.latitude;
     final lng = _pickedLocation!.longitude;
-     return 'https://maps.googleapis.com/maps/api/staticmap?center=$lat,$lng=&zoom=16&size=600x300&maptype=roadmap&markers=color:red%7Clabel:A%7C$lat,$lng&key=AIzaSyAzERuq1sDQgL5ewz2cU0yvmPDQYC2bKmU';
+     return 'https://maps.googleapis.com/maps/api/staticmap?center=$lat,$lng=&zoom=16&size=600x300&maptype=roadmap&markers=color:red%7Clabel:A%7C$lat,$lng&key=AIzaSyDLcwxUggpPZo8lcbH0TB4Crq5SJjtj4ag';
 
   }
 
@@ -64,11 +64,13 @@ class _LocationInputState extends State<LocationInput> {
       return;
     }
     final url = Uri.parse(
-       'https://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lng&key=AIzaSyAzERuq1sDQgL5ewz2cU0yvmPDQYC2bKmU');
+         'https://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$lng&key=AIzaSyDLcwxUggpPZo8lcbH0TB4Crq5SJjtj4ag');
     final response = await http.get(url);
     final resData = json.decode(response.body);
     final address = resData['results']![0]['formatted_address'];
-    debugPrint(resData);
+    
+    
+   // debugPrint(resData);
 
     setState(() {
       _pickedLocation =
