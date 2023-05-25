@@ -7,6 +7,8 @@ class PlacesList extends StatelessWidget {
   const PlacesList({super.key, required this.places});
   final List<Place> places;
 
+
+
   @override
   Widget build(BuildContext context) {
     if (places.isEmpty) {
