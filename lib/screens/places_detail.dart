@@ -34,12 +34,14 @@ class PlacesDetailScreen extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                        builder: ((context) => MapScreen(
-                              location: place.location,
-                              isSelecting: false,
-                            )),
-                      ));
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (ctx) => MapScreen(
+                            location: place.location,
+                            isSelecting: false,
+                          ),
+                        ),
+                      );
                     },
                     child: CircleAvatar(
                       radius: 90,
