@@ -4,7 +4,7 @@ An application made to save users favorite/importent places. Data is kept on the
 
 ## ScreenShot
 
- <img src="/lib/images/Foto1.png" height="400" alt="Screenshot"/>   <img src="/lib/images/Foto2.png" height="400" alt="Screenshot"/>    <img src="/lib/images/Foto3.png" height="400" alt="Screenshot"/>   <img src="/lib/images/Foto4.png" height="300" alt="Screenshot"/>    
+ <img src="/lib/images/Foto1.png" height="400" alt="Screenshot"/>   <img src="/lib/images/Foto2.png" height="400" alt="Screenshot"/>    <img src="/lib/images/Foto3.png" height="400" alt="Screenshot"/>   <img src="/lib/images/Foto4.png" height="400" alt="Screenshot"/>    
 
 ## How to Run 
 
